@@ -31,10 +31,10 @@ root = doc.getroot()
 # print(info_tag.tag, info_tag.text)
 
 for itemtag in root.iter("info"):
-  STN_NM = itemtag.findtext("STN_NM")
+  # STN_NM = itemtag.findtext("STN_NM")
   TM = itemtag.findtext("TM")
-  STN_ID = itemtag.findtext("STN_ID")
+  # STN_ID = itemtag.findtext("STN_ID")
   TA = itemtag.findtext("TA")
-  #f.write("%s,%s,%s,%s, \n" % (TM,STN_ID,STN_NM,TA))
+  # f.write("%s,%s,%s,%s, \n" % (TM,STN_ID,STN_NM,TA))
   f.write("%s,%s, \n" % (TM,TA))
 f.close()
