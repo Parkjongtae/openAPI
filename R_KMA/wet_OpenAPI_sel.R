@@ -179,8 +179,9 @@ for(i in 1:n){
     totaldata <- cbind(totaldata,ctotal3)
     
     colnames(totaldata)=c("DATE","JDAY","TA","RN","ST")
-    
-    write.csv(totaldata,paste(stnm[ii,1],"Wet_data.csv"),row.names=FALSE,quote=F)
+    output<-paste(stnm[ii,1],".csv")
+    output<-gsub(" ","",output)
+    write.csv(totaldata,output,row.names=FALSE,quote=F)
     
     
     
